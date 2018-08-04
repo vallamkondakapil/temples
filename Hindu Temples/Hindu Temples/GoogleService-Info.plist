@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>552295774424-tirgn3tpg6bhl4oodnk0cndfdhkce370.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.552295774424-tirgn3tpg6bhl4oodnk0cndfdhkce370</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjZjgTFWtSDhLYeyYJ5zSIHCZg5Ic4PNw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>552295774424</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.freeapps.hindutemples</string>
+	<key>PROJECT_ID</key>
+	<string>hindu-temples</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hindu-temples.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:552295774424:ios:c5281054ae54b992</string>
+	<key>DATABASE_URL</key>
+	<string>https://hindu-temples.firebaseio.com</string>
+</dict>
+</plist>
