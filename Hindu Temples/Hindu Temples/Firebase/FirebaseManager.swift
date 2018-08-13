@@ -18,6 +18,16 @@ class FirebaseManager {
         ref = Database.database().reference()
     }
     
+    func signin(email: String, password: String, success: @escaping (User) -> Void, failure: @escaping () -> ()) {
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let user = user {
+                success(user)
+            }else{
+                failure()
+            }
+        }
+    }
+    
     static func login(email: String, password: String, success: @escaping (User) -> Void, failure: @escaping (Error) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             guard let user = user else {
@@ -62,6 +72,18 @@ class FirebaseManager {
                 var templeDetails = entity.toJSON()
                 templeDetails["verified"] = false as AnyObject
                 self.ref.child("/temples/\(templeId ?? "")").setValue(templeDetails)
+            }
+        }
+    }
+    
+    func signupUser(signupEntity: SignupEntity, success: @escaping (Bool) -> Void){
+        Auth.auth().createUser(withEmail: signupEntity.emailID, password: signupEntity.password) { (user, error) in
+            if error == nil {
+                let userId = user?.uid
+                let userDetails = signupEntity.toJSON()
+                self.ref.child("/users/\(userId ?? "")").setValue(userDetails, withCompletionBlock: { (err, ref) in
+                    success(err == nil ? true : false)
+                })
             }
         }
     }

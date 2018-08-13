@@ -10,12 +10,18 @@ import Foundation
 import UIKit
 import GoogleSignIn
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
+    @IBOutlet weak var userNameLabel: UILabel!
+    var presenter: HomePresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if GIDSignIn.sharedInstance().hasAuthInKeychain() == false {
             self.dismiss(animated: true, completion: nil)
+            return
         }
+        presenter = HomePresenter(self)
+        presenter?.setupUI()
     }
     
     @IBAction func signOutCLicked(_ sender: Any) {

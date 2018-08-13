@@ -16,4 +16,14 @@ class Utils {
         alertController.addAction(okAction)
         viewController.present(alertController, animated: true, completion: nil)
     }
+    
+    static func getViewController(storyboard: String) -> UIViewController? {
+        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
+        return storyboard.instantiateInitialViewController()
+    }
+    
+    
+    class func getViewFromNib(name: String) -> UIView? {
+        return Bundle.main.loadNibNamed(name, owner: nil, options: nil)?.last as? UIView
+    }
 }

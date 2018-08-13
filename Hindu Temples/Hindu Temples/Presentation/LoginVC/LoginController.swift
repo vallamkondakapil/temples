@@ -10,27 +10,39 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
-    @IBOutlet weak var loginButton: UIButton!
+class LoginController: UIViewController, GIDSignInUIDelegate {
+    @IBOutlet weak var emailTextField: CustomTextField?
+    @IBOutlet weak var passwordTextField: CustomTextField?
+    
+    var presenter: LoginPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.primaryColor()
-        self.loginButton.backgroundColor = UIColor.secondaryColor()
-        GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signInSilently()
-        self.loginButton.layer.cornerRadius = 15
+        presenter = LoginPresenter(vc: self)
+        setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presentHomePage()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func forgotPasswordClicked(_ sender: UIButton) {
+        
+    }
+    @IBAction func signupClicked(_ sender: Any) {
+        presenter?.signupClicked()
+    }
+    @IBAction func loginClicked(_ sender: UIButton) {
+        presenter?.loginClicked()
+    }
+    
+    func setupUI() {
+        self.view.backgroundColor = UIColor.primaryColor()
     }
     
     func presentHomePage() {
@@ -39,26 +51,11 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             let controller = homeVC.instantiateViewController(withIdentifier: "homeVC")
             let navController = UINavigationController(rootViewController: controller)
             self.present(navController, animated: true, completion: nil)
-            //self.present(controller, animated: true, completion: nil)
-        }
-    }
-
-    @IBAction func loginClicked(_ sender: Any) {
-        if let loginVC = UIStoryboard(name: "LoginVC", bundle: nil).instantiateInitialViewController() as? LoginVC {
-            self.addChildViewController(loginVC)
-            loginVC.view.frame = self.view.frame
-            loginVC.view.center.y = self.view.bounds.height * -0.5
-            self.view.addSubview(loginVC.view)
-            loginVC.didMove(toParentViewController: self)
-            
-            UIView.animate(withDuration: 0.3, animations: {
-                loginVC.view.center.y = self.view.center.y
-            })
         }
     }
 }
 
-extension ViewController: GIDSignInDelegate{
+extension LoginController: GIDSignInDelegate{
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         // ...
         if (error) != nil {

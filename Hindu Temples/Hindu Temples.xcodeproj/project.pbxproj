@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		22F69992DE07F2BE8EA93349 /* Pods_Hindu_TemplesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7346FD917D7DD57312A655 /* Pods_Hindu_TemplesTests.framework */; };
 		6551CF25E1F3803ED954EEBB /* Pods_Hindu_Temples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD97B428FEC2080B087CB6BA /* Pods_Hindu_Temples.framework */; };
-		F40C46FB20FF9B430092C3D6 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40C46FA20FF9B430092C3D6 /* LoginVC.storyboard */; };
-		F40C46FD20FF9B4B0092C3D6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C46FC20FF9B4B0092C3D6 /* LoginVC.swift */; };
+		F40891EB21193CF2006B385B /* DatabaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40891EA21193CF2006B385B /* DatabaseInteractor.swift */; };
+		F40891EF21193F5C006B385B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40891EE21193F5C006B385B /* HomePresenter.swift */; };
 		F445BEED2108055E00B13026 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BEEC2108055E00B13026 /* BaseViewController.swift */; };
 		F445BEEF2108079000B13026 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BEEE2108079000B13026 /* FirebaseManager.swift */; };
 		F445BEF2210807E700B13026 /* SignupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445BEF1210807E700B13026 /* SignupEntity.swift */; };
 		F475597F210D3871003FADBC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475597E210D3871003FADBC /* Utils.swift */; };
 		F4755981210D3CAF003FADBC /* TempleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4755980210D3CAF003FADBC /* TempleEntity.swift */; };
 		F4755983210D53BC003FADBC /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4755982210D53BC003FADBC /* UserEntity.swift */; };
+		F483CBA4211CDA8100C3B254 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483CBA3211CDA8100C3B254 /* SignupPresenter.swift */; };
 		F487355C20FCDE1800248DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487355B20FCDE1800248DB5 /* AppDelegate.swift */; };
-		F487355E20FCDE1800248DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487355D20FCDE1800248DB5 /* ViewController.swift */; };
+		F487355E20FCDE1800248DB5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487355D20FCDE1800248DB5 /* LoginController.swift */; };
 		F487356120FCDE1800248DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F487355F20FCDE1800248DB5 /* Main.storyboard */; };
 		F487356320FCDE1900248DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F487356220FCDE1900248DB5 /* Assets.xcassets */; };
 		F487356620FCDE1900248DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F487356420FCDE1900248DB5 /* LaunchScreen.storyboard */; };
@@ -28,6 +29,16 @@
 		F487358C20FCEC3D00248DB5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487358B20FCEC3D00248DB5 /* HomeViewController.swift */; };
 		F49B49B021023CAA0017D7C5 /* SignupVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49B49AF21023CAA0017D7C5 /* SignupVC.storyboard */; };
 		F49B49B221023CB50017D7C5 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B49B121023CB50017D7C5 /* SignupVC.swift */; };
+		F4BBC40C211FC4A000A62241 /* TwoButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BBC40B211FC4A000A62241 /* TwoButtonView.xib */; };
+		F4BBC40E211FC4C100A62241 /* TwoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC40D211FC4C100A62241 /* TwoButtonView.swift */; };
+		F4BBC410211FE52200A62241 /* ThreeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC40F211FE52200A62241 /* ThreeButtonView.swift */; };
+		F4BBC412211FE53C00A62241 /* ThreeButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BBC411211FE53C00A62241 /* ThreeButtonView.xib */; };
+		F4C1ADB8211BC9F9009242CA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1ADB7211BC9F9009242CA /* CustomTextField.swift */; };
+		F4C1ADBA211BE11E009242CA /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1ADB9211BE11E009242CA /* AuthInteractor.swift */; };
+		F4C1ADBC211BE82C009242CA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1ADBB211BE82C009242CA /* LoginPresenter.swift */; };
+		F4C1ADBE211BF261009242CA /* SignupTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1ADBD211BF261009242CA /* SignupTextfield.swift */; };
+		F4C1ADC0211BF2BD009242CA /* SignupTextfield.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C1ADBF211BF2BD009242CA /* SignupTextfield.xib */; };
+		F4C276F1211B8DF9003F08BC /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C276F0211B8DF9003F08BC /* CustomButton.swift */; };
 		F4DF15B62113530900813369 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF15B52113530900813369 /* MyColors.swift */; };
 		F61EC9B99062F3C0D31974D6 /* Pods_Hindu_TemplesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84A7727F76E2061D54D8355 /* Pods_Hindu_TemplesUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,17 +70,18 @@
 		B88B65029DFAF2BED1403AAA /* Pods-Hindu TemplesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hindu TemplesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hindu TemplesUITests/Pods-Hindu TemplesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD97B428FEC2080B087CB6BA /* Pods_Hindu_Temples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hindu_Temples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84A7727F76E2061D54D8355 /* Pods_Hindu_TemplesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hindu_TemplesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F40C46FA20FF9B430092C3D6 /* LoginVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
-		F40C46FC20FF9B4B0092C3D6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F40891EA21193CF2006B385B /* DatabaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseInteractor.swift; sourceTree = "<group>"; };
+		F40891EE21193F5C006B385B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F445BEEC2108055E00B13026 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F445BEEE2108079000B13026 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		F445BEF1210807E700B13026 /* SignupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEntity.swift; sourceTree = "<group>"; };
 		F475597E210D3871003FADBC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F4755980210D3CAF003FADBC /* TempleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleEntity.swift; sourceTree = "<group>"; };
 		F4755982210D53BC003FADBC /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		F483CBA3211CDA8100C3B254 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
 		F487355820FCDE1800248DB5 /* Hindu Temples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hindu Temples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F487355B20FCDE1800248DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F487355D20FCDE1800248DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F487355D20FCDE1800248DB5 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F487356020FCDE1800248DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F487356220FCDE1900248DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F487356520FCDE1900248DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,6 +96,16 @@
 		F487358B20FCEC3D00248DB5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F49B49AF21023CAA0017D7C5 /* SignupVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignupVC.storyboard; sourceTree = "<group>"; };
 		F49B49B121023CB50017D7C5 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		F4BBC40B211FC4A000A62241 /* TwoButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoButtonView.xib; sourceTree = "<group>"; };
+		F4BBC40D211FC4C100A62241 /* TwoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonView.swift; sourceTree = "<group>"; };
+		F4BBC40F211FE52200A62241 /* ThreeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeButtonView.swift; sourceTree = "<group>"; };
+		F4BBC411211FE53C00A62241 /* ThreeButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeButtonView.xib; sourceTree = "<group>"; };
+		F4C1ADB7211BC9F9009242CA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F4C1ADB9211BE11E009242CA /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		F4C1ADBB211BE82C009242CA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		F4C1ADBD211BF261009242CA /* SignupTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTextfield.swift; sourceTree = "<group>"; };
+		F4C1ADBF211BF2BD009242CA /* SignupTextfield.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupTextfield.xib; sourceTree = "<group>"; };
+		F4C276F0211B8DF9003F08BC /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F4DF15B52113530900813369 /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,11 +160,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F40891E921193CE1006B385B /* DatabaseInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				F40891EA21193CF2006B385B /* DatabaseInteractor.swift */,
+				F4C1ADB9211BE11E009242CA /* AuthInteractor.swift */,
+			);
+			path = DatabaseInteractor;
+			sourceTree = "<group>";
+		};
+		F40891EC21193EBB006B385B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F4C276EF211B8DE9003F08BC /* UI */,
+				F40891ED21193ED8006B385B /* Home */,
+				F49B49AE21023C9C0017D7C5 /* Signup */,
+				F40C46F920FF9B360092C3D6 /* LoginVC */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F40891ED21193ED8006B385B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F487358B20FCEC3D00248DB5 /* HomeViewController.swift */,
+				F40891EE21193F5C006B385B /* HomePresenter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F40C46F920FF9B360092C3D6 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
-				F40C46FA20FF9B430092C3D6 /* LoginVC.storyboard */,
-				F40C46FC20FF9B4B0092C3D6 /* LoginVC.swift */,
+				F487355F20FCDE1800248DB5 /* Main.storyboard */,
+				F487355D20FCDE1800248DB5 /* LoginController.swift */,
+				F4C1ADBB211BE82C009242CA /* LoginPresenter.swift */,
 			);
 			path = LoginVC;
 			sourceTree = "<group>";
@@ -198,19 +250,16 @@
 		F487355A20FCDE1800248DB5 /* Hindu Temples */ = {
 			isa = PBXGroup;
 			children = (
+				F40891EC21193EBB006B385B /* Presentation */,
+				F40891E921193CE1006B385B /* DatabaseInteractor */,
 				F475598721134DDE003FADBC /* Utility */,
 				F445BEF0210807DC00B13026 /* Entities */,
 				F445BEEB2108052F00B13026 /* Firebase */,
-				F49B49AE21023C9C0017D7C5 /* Signup */,
-				F40C46F920FF9B360092C3D6 /* LoginVC */,
 				F487358920FCE1EA00248DB5 /* GoogleService-Info.plist */,
 				F487355B20FCDE1800248DB5 /* AppDelegate.swift */,
-				F487355D20FCDE1800248DB5 /* ViewController.swift */,
-				F487355F20FCDE1800248DB5 /* Main.storyboard */,
 				F487356220FCDE1900248DB5 /* Assets.xcassets */,
 				F487356420FCDE1900248DB5 /* LaunchScreen.storyboard */,
 				F487356720FCDE1900248DB5 /* Info.plist */,
-				F487358B20FCEC3D00248DB5 /* HomeViewController.swift */,
 				F445BEEC2108055E00B13026 /* BaseViewController.swift */,
 				F475597E210D3871003FADBC /* Utils.swift */,
 			);
@@ -240,8 +289,24 @@
 			children = (
 				F49B49AF21023CAA0017D7C5 /* SignupVC.storyboard */,
 				F49B49B121023CB50017D7C5 /* SignupVC.swift */,
+				F483CBA3211CDA8100C3B254 /* SignupPresenter.swift */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		F4C276EF211B8DE9003F08BC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F4C276F0211B8DF9003F08BC /* CustomButton.swift */,
+				F4C1ADB7211BC9F9009242CA /* CustomTextField.swift */,
+				F4C1ADBD211BF261009242CA /* SignupTextfield.swift */,
+				F4C1ADBF211BF2BD009242CA /* SignupTextfield.xib */,
+				F4BBC40B211FC4A000A62241 /* TwoButtonView.xib */,
+				F4BBC40D211FC4C100A62241 /* TwoButtonView.swift */,
+				F4BBC40F211FE52200A62241 /* ThreeButtonView.swift */,
+				F4BBC411211FE53C00A62241 /* ThreeButtonView.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,9 +419,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F487356620FCDE1900248DB5 /* LaunchScreen.storyboard in Resources */,
+				F4C1ADC0211BF2BD009242CA /* SignupTextfield.xib in Resources */,
 				F487356320FCDE1900248DB5 /* Assets.xcassets in Resources */,
+				F4BBC412211FE53C00A62241 /* ThreeButtonView.xib in Resources */,
+				F4BBC40C211FC4A000A62241 /* TwoButtonView.xib in Resources */,
 				F487358A20FCE1EA00248DB5 /* GoogleService-Info.plist in Resources */,
-				F40C46FB20FF9B430092C3D6 /* LoginVC.storyboard in Resources */,
 				F487356120FCDE1800248DB5 /* Main.storyboard in Resources */,
 				F49B49B021023CAA0017D7C5 /* SignupVC.storyboard in Resources */,
 			);
@@ -489,15 +556,24 @@
 				F4755983210D53BC003FADBC /* UserEntity.swift in Sources */,
 				F4DF15B62113530900813369 /* MyColors.swift in Sources */,
 				F445BEF2210807E700B13026 /* SignupEntity.swift in Sources */,
-				F487355E20FCDE1800248DB5 /* ViewController.swift in Sources */,
+				F487355E20FCDE1800248DB5 /* LoginController.swift in Sources */,
+				F483CBA4211CDA8100C3B254 /* SignupPresenter.swift in Sources */,
+				F4C1ADBA211BE11E009242CA /* AuthInteractor.swift in Sources */,
+				F4C1ADB8211BC9F9009242CA /* CustomTextField.swift in Sources */,
 				F475597F210D3871003FADBC /* Utils.swift in Sources */,
 				F49B49B221023CB50017D7C5 /* SignupVC.swift in Sources */,
 				F445BEEF2108079000B13026 /* FirebaseManager.swift in Sources */,
+				F40891EF21193F5C006B385B /* HomePresenter.swift in Sources */,
+				F4BBC40E211FC4C100A62241 /* TwoButtonView.swift in Sources */,
 				F487355C20FCDE1800248DB5 /* AppDelegate.swift in Sources */,
-				F40C46FD20FF9B4B0092C3D6 /* LoginVC.swift in Sources */,
+				F40891EB21193CF2006B385B /* DatabaseInteractor.swift in Sources */,
+				F4C1ADBC211BE82C009242CA /* LoginPresenter.swift in Sources */,
+				F4C1ADBE211BF261009242CA /* SignupTextfield.swift in Sources */,
 				F4755981210D3CAF003FADBC /* TempleEntity.swift in Sources */,
+				F4BBC410211FE52200A62241 /* ThreeButtonView.swift in Sources */,
 				F487358C20FCEC3D00248DB5 /* HomeViewController.swift in Sources */,
 				F445BEED2108055E00B13026 /* BaseViewController.swift in Sources */,
+				F4C276F1211B8DF9003F08BC /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

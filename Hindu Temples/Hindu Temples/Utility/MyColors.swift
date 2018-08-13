@@ -11,9 +11,12 @@ import UIKit
 
 extension UIColor {
     static func primaryColor() -> UIColor {
-        return UIColor(red: 68.0/255.0, green: 108.0/255.0, blue: 179/255.0, alpha: 1)
+        return UIColor(red: 238.0/255.0, green: 167.0/255.0, blue: 50/255.0, alpha: 1)
+    }
+    static func primaryColorDark() -> UIColor {
+        return UIColor(red: 193/255.0, green: 137/255.0, blue: 44/255.0, alpha: 1)
     }
     static func secondaryColor() -> UIColor {
-        return UIColor(red: 31/255.0, green: 58/255.0, blue: 147/255.0, alpha: 1)
+        return UIColor(red: 0/255.0, green: 128/255.0, blue: 128/255.0, alpha: 1)
     }
 }
